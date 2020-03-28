@@ -1,0 +1,17 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  margin: 35px auto;
+}
+
+.button {
+  background: #FFFFFF;
+  border-radius: 31px;
+  width: 160px;
+  height: 46px;
+  font: Light 21px/51px Montserrat;
+  color: #B5651E;
+  text-transform: uppercase;
+
+}

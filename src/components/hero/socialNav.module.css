@@ -1,0 +1,27 @@
+.header {
+  text-align: center;
+  font: Medium 24px/40px Montserrat;
+  color: #FFFFFF;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.nav{
+  width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon{
+  background-color: rgba(255, 255, 255,0.1);
+  border: none;
+  border-radius: 15px;
+  width: 80px;
+  height: 80px;
+}
+
+.iconImage {
+  z-index: 1;
+  opacity: none;
+}
