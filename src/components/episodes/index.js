@@ -8,6 +8,7 @@ const Episodes = ({ episodeData }) => {
     <div>
       {episodeData.map(({ node: episode }, index) => {
         const { title, contentSnippet, isoDate } = episode;
+        const slug = title.replace(/\s/g, '');
         const currentEpisode = index - 1;
         let episodeText
         episodeText = 'Trailer';
@@ -19,7 +20,7 @@ const Episodes = ({ episodeData }) => {
             <h4 className={Styles.subTitle} >{isoDate} | {episodeText}</h4>
             <p className={Styles.content}>{contentSnippet}</p>
             <div className={Styles.linkWrapper}>
-              <Link className={Styles.link} to='/'>
+              <Link className={Styles.link} to={slug}>
                 <div className={Styles.listen}>
                   <Speaker className={Styles.speaker} />
                   <p className={Styles.buttonText}>Listen</p>

@@ -1,5 +1,4 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
 import Hero from '../components/hero';
 import Layout from '../components/layout';
 import About from '../components/about';
@@ -10,7 +9,7 @@ import SEO from "../components/seo"
 const AboutPage = ({ data }) => {
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="About" />
       <Hero />
       <About />
     </Layout>
