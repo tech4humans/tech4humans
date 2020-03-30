@@ -3,15 +3,39 @@
   justify-content: space-between;
   width: 350px;
   margin: 35px auto;
+  background-color: #FFBF00;
+  border-radius: 50px;
+  padding: 20px 40px 20px 40px;
 }
 
-.button {
-  background: #FFFFFF;
+.link {
+  background-color: #FFBF00;
+  border: 1px solid #B5651E;
   border-radius: 31px;
   width: 160px;
   height: 46px;
-  font: Light 21px/51px Montserrat;
+  font-weight: lighter;
+  font-size: 21px;
+  font-family: Montserrat;
   color: #B5651E;
   text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 6%;
+}
 
+.active {
+  background-color: #B5651E;
+  border: 1px solid #B5651E;
+  border-radius: 31px;
+  width: 160px;
+  height: 46px;
+  font-weight: lighter;
+  font-size: 21px;
+  font-family: Montserrat;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 6%;
 }

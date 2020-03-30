@@ -1,24 +1,8 @@
 .headerWrapper {
-  display: flex;
-  justify-content: center;
-  padding-top: 75px;
-  width: 100%;
-  margin: 0 auto;
+  text-align: center;
 }
 
 .heroImage {
- width: 121px;
- height: 158px;
-}
-
-.header {
-  margin-top: 35px;
-  margin-left: 20px;
-  font-size: 77px;
-  font-family: Cute Font;
-  font-style: normal;
-  font-weight: 200;
-  letter-spacing: 0;
-  color: #FFFFFF;
-  opacity: 1;
+ width: 50%;
+ margin-top: 50px;
 }

@@ -6,6 +6,14 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /icons/
+        }
+      }
+    },
+    {
       resolve: 'gatsby-source-anchor',
       options: {
         rss: 'https://anchor.fm/s/13b5b018/podcast/rss',

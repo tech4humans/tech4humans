@@ -1,6 +1,7 @@
 .header {
   text-align: center;
-  font: Medium 24px/40px Montserrat;
+  font-family: Montserrat;
+  font-size: 14px;
   color: #FFFFFF;
   margin-top: 0;
   margin-bottom: 12px;
@@ -19,9 +20,11 @@
   border-radius: 15px;
   width: 80px;
   height: 80px;
+  text-align: center;
 }
 
 .iconImage {
   z-index: 1;
   opacity: none;
+  margin-top: 25%;
 }

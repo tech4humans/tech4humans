@@ -1,4 +1,5 @@
 import React from "react"
+import Footer from "../footer";
 import Styles from "./index.module.css"
 
 
@@ -10,13 +11,9 @@ const Layout = ({ children }) => {
       <div className={Styles.overlay}>
         <div>
           <main>{children}</main>
-          <footer className={Styles.footer}>
-            TECH4HUMANS© {new Date().getFullYear()}, Built with
-          {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

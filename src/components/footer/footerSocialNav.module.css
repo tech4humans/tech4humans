@@ -1,0 +1,30 @@
+.nav{
+  width: 500px;
+  margin: 0 auto;
+  padding-bottom: 75px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon{
+  background-color: rgba(181, 101, 30,0.1);
+  border: none;
+  border-radius: 15px;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+}
+
+.iconImage {
+  z-index: 1;
+  opacity: none;
+  margin-top: 25%;
+}
+
+.iconImage path {
+  fill: #B5651E;
+}
+
+.header {
+  display: none;
+}

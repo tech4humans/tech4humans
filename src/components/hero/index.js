@@ -1,16 +1,17 @@
 import React from 'react';
-import Logo from '../../images/Logo.png'
+import Logo from '../../images/toplogo.png'
 import Styles from './index.module.css';
 import SocialNav from './socialNav';
-
+import NavBar from './navbar';
+import SocialNavStyles from './socialNav.module.css'
 
 const Hero = () => (
   <>
     <div className={Styles.headerWrapper}>
       <img className={Styles.heroImage} src={Logo} alt="Hero Image Banner" />
-      <h1 className={Styles.header}> TECH4HUMANS </h1>
     </div>
-    <SocialNav />
+    <SocialNav Styles={SocialNavStyles} />
+    <NavBar />
   </>
 );
 

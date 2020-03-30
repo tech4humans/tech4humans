@@ -1,0 +1,23 @@
+.container {
+  background-color: #FAF9F6;
+  text-align: center;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 23px;
+}
+
+.logo {
+  width: 457px;
+  margin: 25px auto;
+  margin-bottom: 0;
+  background-color: #FAF9F6;
+}
+
+.gatsby {
+  color: #B5651E;
+}
