@@ -14,13 +14,16 @@ const EpisodePage = ({ data }) => {
     <Layout>
       <SEO title="Trailer" />
       <Hero />
-      <SingleEpisode />
+      <SingleEpisode
+        anchorProps={data.allAnchorEpisode.edges[0].node}
+        episodeProps={data.allStaticDataJson.edges[0].node}
+      />
     </Layout>
   )
 }
 
 export const query = graphql`
-  query SingleEpisodesQuery($title: String!) {
+  query SingleEpisodesQuery($title: String! $slug: String!) {
   allAnchorEpisode(filter: {title: {eq: $title}}) {
     edges {
       node {
@@ -33,7 +36,18 @@ export const query = graphql`
       }
     }
   }
+  allStaticDataJson(filter: {episode: {eq: $slug}}) {
+    edges {
+      node {
+        episode
+        additionalContent
+        note
+        shortName
+      }
+    }
+  }
 }
+
 `
 
 export default EpisodePage

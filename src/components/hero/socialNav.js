@@ -14,7 +14,7 @@ const iconData = [
   {
     name: 'Google Play',
     iconSvg: GooglePlay,
-    url: 'https://twitter.com/Tech4humansio',
+    url: 'https://www.google.com/podcasts?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy8xM2I1YjAxOC9wb2RjYXN0L3Jzcw==',
   },
   {
     name: 'Spotify',

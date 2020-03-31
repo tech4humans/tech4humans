@@ -24,7 +24,7 @@ const About = () => {
         <div className={Styles.bio}>
           <h4 className={Styles.host} >Hasibul Chowdhury</h4>
           <p className={Styles.bioContent}>
-            Hasibul is a second career developer who comes from a background in customer support management. In 2019 after completing a bootcamp, Hasibul became a software engineer at American Express. He is a mental health advocate, live coding streamer, and rapper. Hasibul currently spends some of his free time being Rahat.
+            Hasibul is an IT geek turned developer. He recently completed a bootcamp and loves drag and drop web development. Hasibul currently spends his time getting his daughter to love technology in addition to her Frozen dolls.
           </p>
         </div>
       </div>
