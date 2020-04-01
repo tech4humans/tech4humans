@@ -20,7 +20,11 @@
 }
 
 .icon:hover .iconImage path {
-  fill: rgba(181, 101, 30,0.1);
+  fill: rgba(181, 101, 30,0.1)
+}
+
+.iconImage path {
+  fill: #B5651E;;
 }
 
 
