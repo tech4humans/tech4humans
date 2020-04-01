@@ -7,8 +7,8 @@ const About = () => {
   return (
     <main className={Styles.container}>
       <h1 className={Styles.headline}>About Us</h1>
-      <p className={Styles.content}> Tech4Humans is podcast hosted by Rahat Chowdhury and Hasibul Chowdhury. (The last names are a coincedence among best friends) Tech4humans aims to be a platform to showcase the postivive impacts that tech can have on humanity. We focus on highlighting projects and individuals who are working towards making this impact.</p>
-      <p className={Styles.content}>Some of our guests have done work to help marginalized people, raise awareness about mental health in tech, or share inspiring stories and help others break into the tech industry. We would love to have you on as a guest if you work in tech and are doing something postivive, you can contact us using this form if you are interested.</p>
+      <p className={Styles.content}> Tech4Humans is a podcast hosted by Rahat Chowdhury and Hasibul Chowdhury. (The last names are a coincidence among best friends) Tech4humans aims to be a platform to showcase the positive impacts that tech can have on humanity. We focus on highlighting projects and individuals who are working towards making this impact.</p>
+      <p className={Styles.content}>Some of our guests have done work to help marginalized people, raise awareness about mental health in tech, or share inspiring stories and help others break into the tech industry. We would love to have you on as a guest if you work in tech and are doing something positive, you can contact us using this form if you are interested.</p>
 
       <div className={Styles.hostContainer} >
         <img className={Styles.hostpicture} src={Rahat} alt="Rahat Chowdhury Profile picture" />
