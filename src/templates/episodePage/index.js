@@ -11,7 +11,7 @@ import SEO from "../../components/seo"
 const EpisodePage = ({ data }) => {
   return (
     <Layout>
-      <SEO title={data.allStaticDataJson.edges[0].node.shortName} image={data.allAnchorEpisode.edges[0].node.itunes.image} />
+      <SEO title={data.allStaticDataJson.edges[0].node.shortName} image="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3206742/3206742-1585365231264-b8b08e497c22d.jpg" />
       <Hero />
       <SingleEpisode
         anchorProps={data.allAnchorEpisode.edges[0].node}

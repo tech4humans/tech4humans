@@ -8,7 +8,6 @@ import SEO from "../components/seo"
 
 
 const IndexPage = ({ data }) => {
-  console.log('hello')
   return (
     <Layout>
       <SEO title="Home" image={data.allAnchorEpisode.edges[0].node.itunes.image} />
