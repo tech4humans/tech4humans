@@ -6,6 +6,10 @@
   justify-content: space-around;
 }
 
+.header {
+  display: none;
+}
+
 .icon{
   background-color: rgba(181, 101, 30,0.1);
   border: none;
@@ -20,17 +24,22 @@
 }
 
 
-
 .iconImage {
   z-index: 1;
   opacity: none;
-  margin-top: 25%;
+  margin-top: 25%
 }
 
-.iconImage path {
-  fill: #B5651E;
-}
-
-.header {
-  display: none;
+@media (max-width: 425px) {
+  .nav {
+    width: 350px;
+  }
+  .icon {
+    width: 50px;
+    height: 50px;
+  }
+  .iconImage{
+    margin-top: 10%;
+    width: 65%;
+  }
 }

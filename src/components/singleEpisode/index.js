@@ -3,7 +3,6 @@ import Player from './audioPlayer';
 import Styles from './index.module.css';
 
 const SingleEpisode = ({ anchorProps, episodeProps }) => {
-  console.log(episodeProps)
   const { shortName, additionalContent, note } = episodeProps;
   const { title, contentSnippet, isoDate, enclosure: { url } } = anchorProps
   return (

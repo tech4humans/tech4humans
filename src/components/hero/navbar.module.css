@@ -44,3 +44,19 @@
   text-align: center;
   padding-top: 6%;
 }
+
+@media (max-width: 425px) {
+  .nav {
+    width: 250px;
+  }
+  .link {
+    font-size: 15px;
+    width: 100px;
+    padding-top: 10%;
+  }
+  .active {
+    font-size: 15px;
+    width: 100px;
+    padding-top: 10%;
+  }
+}

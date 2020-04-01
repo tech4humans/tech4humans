@@ -1,6 +1,7 @@
 import React from 'react';
 import Styles from './index.module.css';
 import Rahat from '../../images/rahat.png';
+import Hasibul from '../../images/hasibul.jpeg';
 
 const About = () => {
   return (
@@ -20,7 +21,7 @@ const About = () => {
       </div>
 
       <div className={Styles.hostContainer} >
-        <img className={Styles.hostpicture} src={Rahat} alt="Rahat Chowdhury Profile picture" />
+        <img className={Styles.hostpicture} src={Hasibul} alt="Hasibul Chowdhury Profile picture" />
         <div className={Styles.bio}>
           <h4 className={Styles.host} >Hasibul Chowdhury</h4>
           <p className={Styles.bioContent}>

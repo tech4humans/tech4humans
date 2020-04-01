@@ -9,10 +9,9 @@ import SEO from "../../components/seo"
 
 
 const EpisodePage = ({ data }) => {
-  console.log(data)
   return (
     <Layout>
-      <SEO title="Trailer" />
+      <SEO title={data.allStaticDataJson.edges[0].node.shortName} image={data.allAnchorEpisode.edges[0].node.itunes.image} />
       <Hero />
       <SingleEpisode
         anchorProps={data.allAnchorEpisode.edges[0].node}
@@ -30,6 +29,9 @@ export const query = graphql`
         title
         contentSnippet
         isoDate(formatString: "MMMM D, YYYY")
+        itunes {
+          image
+        }
         enclosure {
           url
         }

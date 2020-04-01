@@ -8,9 +8,10 @@ import SEO from "../components/seo"
 
 
 const IndexPage = ({ data }) => {
+  console.log('hello')
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Home" image={data.allAnchorEpisode.edges[0].node.itunes.image} />
       <Hero />
       <Episodes episodeData={data.allAnchorEpisode.edges} />
     </Layout>
@@ -25,10 +26,14 @@ export const query = graphql`
         title
         contentSnippet
         isoDate(formatString: "MMMM D, YYYY")
+        itunes {
+          image
+        }
       }
     }
   }
 }
+
 `
 
 export default IndexPage

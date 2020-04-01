@@ -21,3 +21,9 @@
 .gatsby {
   color: #B5651E;
 }
+
+@media (max-width: 425px) {
+  .logo {
+    width: 357px;
+  }
+}

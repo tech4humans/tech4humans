@@ -139,3 +139,12 @@
 .rhap_time {
   font-family: 'Montserrat', sans-serif;
 }
+
+@media (max-width: 425px) {
+  .rhap_time {
+    display: none;
+  }
+  .rhap_progress-bar  {
+    width: 50%;
+  }
+}

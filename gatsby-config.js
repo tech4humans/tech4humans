@@ -2,7 +2,9 @@ module.exports = {
   siteMetadata: {
     title: `Tech4Humans`,
     description: `Tech4Humans is a podcast dedicated towards showcasing tech projects that are making a positive impact on humanity.`,
-    author: `@gatsbyjs`,
+    author: `Rahat Chowdhury and Hasibul Chowdhury`,
+    keywords: ["podcast", "tech", "tech4humans", "rahat", "hasibul", "technology", "humanity", "chowdhury"],
+    siteUrl: `https://www.tech4humans.io`
   },
   plugins: [
     {
