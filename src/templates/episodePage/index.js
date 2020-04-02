@@ -11,39 +11,39 @@ import SEO from "../../components/seo"
 const EpisodePage = ({ data }) => {
   return (
     <Layout>
-      <SEO title={data.allStaticDataJson.edges[0].node.shortName} image="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3206742/3206742-1585365231264-b8b08e497c22d.jpg" />
+      <SEO title={data.allEpisodesJson.edges[0].node.shortName} image={data.allAnchorEpisode.edges[0].node.itunes.image} />
       <Hero />
       <SingleEpisode
         anchorProps={data.allAnchorEpisode.edges[0].node}
-        episodeProps={data.allStaticDataJson.edges[0].node}
+        episodeProps={data.allEpisodesJson.edges[0].node}
       />
     </Layout>
   )
 }
 
 export const query = graphql`
-  query SingleEpisodesQuery($title: String! $slug: String!) {
+  query SingleEpisodesQuery($title: String!, $slug: String!) {
   allAnchorEpisode(filter: {title: {eq: $title}}) {
     edges {
       node {
         title
         contentSnippet
         isoDate(formatString: "MMMM D, YYYY")
-        itunes {
-          image
-        }
         enclosure {
           url
+        }
+        itunes {
+          image
         }
       }
     }
   }
-  allStaticDataJson(filter: {episode: {eq: $slug}}) {
+  allEpisodesJson(filter: {episode: {eq: $slug}}) {
     edges {
       node {
         episode
-        additionalContent
         note
+        additionalContent
         shortName
       }
     }

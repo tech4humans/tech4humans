@@ -1,6 +1,14 @@
-{
-  "episode": "Tech4HumansTrailer",
-  "shortName": "Trailer",
-  "additionalContent": "",
-  "note": ""
-}
+[
+  {
+    "episode": "Tech4HumansTrailer",
+    "shortName": "Trailer",
+    "additionalContent": "",
+    "note": ""
+  },
+  {
+    "episode": "Tech4HumansEpisode0",
+    "shortName": "Episode 0",
+    "additionalContent": "<a href='https://twitter.com/Tech4humansio'> Follow Tech4Humans on Twitter </a> <a href='https://twitter.com/Rahatcodes'> Follow Rahat on Twitter </a> <a href='https://twitter.com/hasibulch'> Follow Hasibul on Twitter </a> <a href='https://www.rahatcodes.com/'> Rahat Codes Livestream Archive </a>",
+    "note": ""
+  }
+]
