@@ -9,8 +9,8 @@ const Episodes = ({ episodeData }) => {
       {episodeData.map(({ node: episode }, index) => {
         const { title, contentSnippet, isoDate } = episode;
         const slug = title.replace(/\s/g, '');
-        const currentEpisode = index - 1;
-        let episodeText
+        const currentEpisode = episodeData.length - index - 2;
+        let episodeText = `Episode ${currentEpisode}`
         episodeText = 'Trailer';
         if (currentEpisode >= 0) episodeText = `Episode ${currentEpisode}`
 
