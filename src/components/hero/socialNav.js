@@ -24,7 +24,7 @@ const iconData = [
   {
     name: 'Apple Podcast',
     iconSvg: Itunes,
-    url: 'https://open.spotify.com/show/3jiFb3y73lcuE2x094IRAo',
+    url: 'https://podcasts.apple.com/us/podcast/tech4humans/id1505436313',
   },
   {
     name: 'Rss',
