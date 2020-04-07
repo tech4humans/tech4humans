@@ -39,3 +39,19 @@
   margin-bottom: 5px;
   width: fit-content;
 }
+
+.button {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  background-color: #FFFFFF;
+  padding: 10px;
+  border: 4px solid #707070;
+  color: 707070;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.button:focus {
+  outline: none;
+  border-color: #B5651E;
+}

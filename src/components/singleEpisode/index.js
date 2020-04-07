@@ -1,9 +1,10 @@
-import React, { useRef } from 'react';
+import React, { useState } from 'react';
 import Player from './audioPlayer';
 import Styles from './index.module.css';
 
 const SingleEpisode = ({ anchorProps, episodeProps }) => {
-  const { shortName, additionalContent, note } = episodeProps;
+  const [expanded, setExpanded] = useState(false);
+  const { shortName, additionalContent, note, transcript } = episodeProps;
   const { title, contentSnippet, isoDate, enclosure: { url } } = anchorProps
   const createMarkup = (input) => {
     return { __html: input }
@@ -18,6 +19,13 @@ const SingleEpisode = ({ anchorProps, episodeProps }) => {
         <div className={Styles.links} dangerouslySetInnerHTML={createMarkup(additionalContent)} />
       }
       {note && <p> note </p>}
+      {transcript &&
+        <>
+          <button className={Styles.button} onClick={() => setExpanded(!expanded)} >{expanded ? "Hide Transcript" : "Show Transcript"}</button>
+          {expanded && <div className={Styles.content} dangerouslySetInnerHTML={createMarkup(transcript)} />}
+          {expanded && <button className={Styles.button} onClick={() => setExpanded(!expanded)} >Hide Transcript</button>}
+        </>
+      }
     </div>
   )
 };
