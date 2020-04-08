@@ -30,4 +30,5 @@ For a demonstration on how to do this see this video: (add video demo here)
 
 If you see any open issues in the repository feel free to comment on the issue and let us know you would like to work on this. If you find any bugs or issues not listed feel free to create an issue or make a pull request and we will review.
 
-Note: Participation on this open source project means that you agree to abide by our Code of Conduct. 
+Note: Participation on this open source project means that you agree to abide by our Code of Conduct:
+https://github.com/Rahat-ch/tech4humans/blob/master/COC.md
