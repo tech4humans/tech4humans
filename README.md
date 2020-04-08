@@ -22,7 +22,7 @@ npm start
 
 If you have the gatsby CLI installed you can also use the gatsby develop command. 
 
-Once your changes are complete push them up to your fork and make a pull request to the development branch of the main repository. 
+Once your changes are complete push them up to your fork and make a pull request to the development branch of the main repository. If your pull request is directily related to an existing issue please make sure to specify the issue number.
 
 For a demonstration on how to do this see this video: (add video demo here)
 
