@@ -10,7 +10,7 @@ Tech4humans is deployed here: https://www.tech4humans.io/
 
 If you would like to make a contribution to this project please follow the steps below:
 
-- Fork this repository 
+- Fork the development branch of this repository 
 - Clone your fork to your local machine
 - Create a branch with your initials and a small description of what change you are making (example: rc/updateReadme)
 - To run the application locally: 
