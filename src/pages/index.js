@@ -19,7 +19,7 @@ const IndexPage = ({ data }) => {
 
 export const query = graphql`
   query EpisodesQuery {
-  allAnchorEpisode {
+  allAnchorEpisode(sort: {fields: isoDate, order: DESC}) {
     edges {
       node {
         title
@@ -32,6 +32,7 @@ export const query = graphql`
     }
   }
 }
+
 
 `
 
