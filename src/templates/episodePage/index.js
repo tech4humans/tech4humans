@@ -11,7 +11,7 @@ import SEO from "../../components/seo"
 const EpisodePage = ({ data }) => {
   return (
     <Layout>
-      <SEO title={data.allEpisodesJson.edges[0].node.shortName} image={data.allAnchorEpisode.edges[0].node.itunes.image} />
+      <SEO title={data.allMdx.edges[0].node.shortName} image={data.allAnchorEpisode.edges[0].node.itunes.image} />
       <Hero />
       <SingleEpisode
         anchorProps={data.allAnchorEpisode.edges[0].node}
