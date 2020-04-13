@@ -15,7 +15,7 @@ const EpisodePage = ({ data }) => {
       <Hero />
       <SingleEpisode
         anchorProps={data.allAnchorEpisode.edges[0].node}
-        episodeProps={data.allEpisodesJson.edges[0].node}
+        mdxProps={data.allMdx.edges[0].node}
       />
     </Layout>
   )
@@ -38,18 +38,23 @@ export const query = graphql`
       }
     }
   }
-  allEpisodesJson(filter: {episode: {eq: $slug}}) {
+  allMdx(filter: {frontmatter: {episode: {eq: $slug}}}) {
     edges {
       node {
-        episode
-        note
-        additionalContent
-        shortName
-        transcript
+        body
+        frontmatter {
+          episode
+          shortName
+          links {
+            name
+            url
+          }
+        }
       }
     }
   }
 }
+
 
 `
 
