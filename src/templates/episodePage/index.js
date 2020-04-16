@@ -45,6 +45,7 @@ export const query = graphql`
         frontmatter {
           episode
           shortName
+          note
           links {
             name
             url

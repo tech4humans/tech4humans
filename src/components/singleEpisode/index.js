@@ -5,7 +5,7 @@ import Styles from './index.module.css';
 
 const SingleEpisode = ({ anchorProps, mdxProps }) => {
   const [expanded, setExpanded] = useState(false);
-  const { body, frontmatter: { shortName, links } } = mdxProps;
+  const { body, frontmatter: { shortName, links, note } } = mdxProps;
   const { title, contentSnippet, isoDate, enclosure: { url } } = anchorProps
 
   return (
@@ -17,6 +17,13 @@ const SingleEpisode = ({ anchorProps, mdxProps }) => {
       {links &&
         <div className={Styles.links}>
           {links.map(link => <a href={link.url}>{link.name}</a>)}
+        </div>
+      }
+      {
+        note &&
+        <div className={Styles.noteContainer}>
+          <h3 className={Styles.noteLine}>Note:</h3>
+          <p className={Styles.note}>{note}</p>
         </div>
       }
       {body &&
