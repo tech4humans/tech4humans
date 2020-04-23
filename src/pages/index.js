@@ -10,7 +10,7 @@ import SEO from "../components/seo"
 const IndexPage = ({ data }) => {
   return (
     <Layout>
-      <SEO title="Home" image={data.allAnchorEpisode.edges[0].node.itunes.image} />
+      <SEO title="Home" image="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3206742/3206742-1585795503161-cb62cbb5cbca6.jpg" />
       <Hero />
       <Episodes episodeData={data.allAnchorEpisode.edges} />
     </Layout>
