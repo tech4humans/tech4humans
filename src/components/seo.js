@@ -99,6 +99,10 @@ function SEO({ description, lang, meta, image, title, pathname }) {
                 name: "twitter:card",
                 content: "summary",
               },
+              {
+                name: "twitter:image",
+                content: image
+              }
             ]
         )
         .concat(meta)}
