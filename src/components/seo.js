@@ -33,6 +33,10 @@ function SEO({ description, lang, meta, image, title, pathname }) {
       meta={
         [
           {
+            name: `author`,
+            content: site.siteMetadata.author,
+          },
+          {
             name: `description`,
             content: metaDescription,
           },
@@ -49,6 +53,10 @@ function SEO({ description, lang, meta, image, title, pathname }) {
             content: `website`,
           },
           {
+            property: `og:image`,
+            content: image,
+          },
+          {
             name: "twitter:card",
             content: "summary_large_image",
           },
@@ -62,7 +70,7 @@ function SEO({ description, lang, meta, image, title, pathname }) {
           },
           {
             name: `twitter:title`,
-            content: title,
+            content: title || site.siteMetadata.title,
           },
           {
             name: `twitter:description`,
