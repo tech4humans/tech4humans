@@ -1,0 +1,201 @@
+---
+episode: Tech4HumansEpisode10
+shortName: Episode 10
+links: [
+  { name: Follow Erika on Twitter, url: https://twitter.com/EriPDev},
+  { name: A11y tips from Berkely, url: https://webaccess.berkeley.edu/resources/tips/web-accessibility}, 
+  { name: W3 Org Acessibility Intro, url: https://www.w3.org/WAI/fundamentals/accessibility-intro/ },
+  { name: Deque, url: https://www.deque.com/accessible-development/},
+  { name: Color Checker, url: https://webaim.org/resources/contrastchecker/},
+  { name: Lighthouse Automated Testing, url: https://developers.google.com/web/tools/lighthouse},
+  ]
+note: 
+---
+Rahat Chowdhury  0:15  
+Hi, I'm Rahat.
+
+Hasibul Chowdhury  0:16  
+Hi I am Hasibul, 
+
+Rahat Chowdhury  0:18  
+and you're listening to tech4humans. 
+
+Welcome to a new episode of tech4humans. My name is Rahat. And today we have Erika Myles with us. Erika, can you introduce yourself a little bit for everyone?
+
+Erika Myles  0:31  
+Yeah, sure. So like you said, my name is Erika and I am a front end developer based out of Atlanta. I recently started working professionally in web development in December of 2019. And I'm mostly self taught ish.
+
+Rahat Chowdhury  0:50  
+Nice. That's awesome. Yeah, Hasibul and I also recently started, Hasibul very recently, and I started a few months ago.
+
+Hasibul Chowdhury  0:58  
+Wait hasn't it been a year didn't you hit a year yet,
+
+Rahat Chowdhury  1:01  
+It'll be a year in July. I still say a few months. Cool. So yeah, we brought you on today want to talk to you a little bit about accessibility. Can you give us I guess a little bit of a introduction to what you do with accessibility, how you get into doing things?
+
+Erika Myles  1:22  
+Yeah. So as far as what I do with it. So at my job, like I said, I'm a front end developer, for an insurance company. And I am on a team that basically is over like the homepage and landing pages for products, things like that. So as far as accessibility, we have an accessibility team. And previously, they used to test our pages. But they kind of had to scale back on there just to like the sheer volume of all of the teams sending all of their work to them. So we took over our own pages. So basically, anything that we develop, it's our job to make sure They're meeting like accessibility guidelines and standards before they go out into production. Before I started my job, I had first learned about accessibility. On Twitter. There were like some really cool people that were talking about accessibility. And I kind of took an interest in it from what they were saying. I've been a person where I've always kind of wanted to have some sort of what I want to say, have meaningful, if you will, or impactful work in what I do. And I feel like learning more about accessibility is a way to do that in web development. And it's kind of weird, it's considered like a niche thing, when really in all actuality, it should be considered a standard. So I'd like to hope to contribute to changing that. That mindset with people.
+
+Rahat Chowdhury  2:50  
+Yeah, definitely getting buy in from everyone else that accessibility is important, can probably be one of the hardest parts of actually getting into it. Can you give us like some context maybe like, do you do like accessibility like in terms of like a react app? Or like, what technologies are you usually using.
+
+Erika Myles  3:12  
+Yes. So when we do testing for our pages, we do it in the context of react. Other teams, of course, they have to do whatever it is that they're working in.
+
+Rahat Chowdhury  3:26  
+Gotcha. So, so you mentioned like your team, kind of like started doing that kind of recently. Is that corect? 
+
+Erika Myles  3:34  
+Yes. They started doing it before I came to the team. And I believe there's a company called de que. They actually came when I think they still do, they'll come on site every now and then, for my employer, and they'll do like an accessibility Bootcamp, but mainly what it entails for what we do. We do start usually we'll do like browser audits, will physically go through the pages or applications with like, The screen reader, and anything that's not meeting any standards, we have to fix those defects and have them revalidated before we can put it out in production. Luckily, we have like a design team. That of course, when they make the designs, they're basing them off of accessibility guidelines. And it's our jobs to implement it in an accessible way. Or if something can't really be implemented the way they like it, to kind of send it back to them with suggestions on how we can kind of meet their vision with modifications to make sure it remains accessible.
+
+Hasibul Chowdhury  4:33  
+That's wonderful that you guys are so centric around or centered around accessibility. You know, you mentioned how you're self taught Rahat and I are bootcamp grads. And I felt like even people who did the general, the traditional CS background in college, they don't really cover accessibility in school or in these instructions. What are some ways or what are some ways you got into it? And what are your recommendations for people to get into to accessibility and incorporate that into their work.
+
+Erika Myles  5:02  
+Yes. So the way I got into it, I just kind of stumbled across it on Twitter, there's a ton of information out there. Like if you search the hashtag, a11y, there'll be plenty of like resources and things that come up. For anyone who's interested in getting into it. It's definitely one of those things where, if you implement it from the beginning, it's a lot easier going forward than to go back and to try to redo it. And really honestly, getting the basics isn't that difficult, like using semantic HTML and semantic markup? That's like a huge way to hit like a lot of kind of the standards and things like that. And if you familiarize yourself with like Aria labels for JavaScript, putting those in when you're building like your react components in the first place, instead of trying to go back and redo them. That's a lot easier. And of course, they have like resources. And things like that if you want to share any of those.
+
+Rahat Chowdhury  6:04  
+Yeah, I think definitely love to hear some of those.
+
+Erika Myles  6:06  
+So for general info, where I usually go to and where like our guideline at work, we kind of have like an internal database that lists like all of the guidelines and how we need to meet them. It's based off of the Web Content Accessibility Guidelines, or WCAG. And that comes from, I believe, the World Wide Web Consortium. So w3.org, it basically has an outline of all of the standards. There's single a double A and triple A standards. Single a means you're just barely meeting the baseline for accessible. Double A is what most businesses including where I work, strive to hit. Triple A is like I want to say almost next to impossible like most sites won't get that it's something good to aim for, but it's not hard required. De queue like I mentioned earlier, they have lots of resources, I use them a lot for their screen reader shortcuts. When I first started at my job, using a screen reader was definitely pretty daunting and something to get used to. But having those guides and those shortcuts definitely helped a lot. And we use a lot of like browser plugins to help like run audits. So they think there's like a wave one, it's like it wave webaim.org. And there's like a suite of evaluation tools. There's the test worldview plugin for Chrome and like lighthouse, which are the same things, basically, you can run it in browser audit, and that tells you a lot about what you can fix on your page.
+
+Rahat Chowdhury  7:40  
+Cool. Yeah, I remember the first time I kind of like tried using a screen reader on like, one of my, the web apps I built, and it was one of the worst things I've ever heard in my life. I was like, Oh no.
+
+Erika Myles  7:53  
+I know. I was like, what, what did I do? It sounds like that and they're like, you just have to slow it down until you can keep up with it.
+
+Rahat Chowdhury  8:04  
+Definitely, yeah. So yeah, you mentioned, like those resources. And like everything you've been doing at work, what are I guess like the main takeaways from your work that you've done over the past maybe couple months. in accessiblity?
+
+Erika Myles  8:20  
+Yes. So the main takeaway that I've gotten from it is one, it's super important. Like just in like the training materials, there were lots of like statistics on people who rely on like assistive technologies, and basically just have a need, in general for your product to be accessible. Like it's a huge amount of users. And so you definitely don't want to exclude people. When it's so easily rectifiable like to make your apps and websites accessible. What else is the takeaway is important? That's the main one and there's a lot to learn. Like it's something that if you get into it, You will never be bored. Like, every time I do something like by test an application or a page, I have to like, look stuff up. So I'm like, Wow, I've never seen this before. Or I'll get like an error and like one of the audit tools, and I'm like, What does this mean? And how do I fix it? So it's definitely interesting. And it's kind of like a good way to be like an ally to the community. Because of course, I see this a lot with accessibility. Usually, the main people advocating for it are like disabled people, or people who rely on it. And it's kind of not fair, because they already have the burden of having to like, deal with all that they also shouldn't have to implement it. So the rest of us can definitely do our part to kind of help them out and help make things more accesible.
+
+Hasibul Chowdhury  9:41  
+You know, you touched upon this about how there's such a large percentage of users that rely on accessibility. And I still feel like developers and companies are still not wanting to take that step. You know, what are some reasons that while you've done work, like if you were to try to convince others To companies or other developers, why they should incorporate accessible into their work?
+
+Erika Myles  10:06  
+Yeah, so I mean, you could look at it from in the way I think of it, you can look at it from one of two standpoints. Like you can look at it from like a moral standpoint. So if you had someone who wants to use their their product, you wouldn't arbitrarily decide, oh, well, you just can't use it just because. And when you make products that aren't accessible, that's essentially what you're doing. You're deciding, oh, you're visually impaired. I'm not just can't use my product, because I'm not going to make it visually accessible or something like that. The other way you can look at it from a financial standpoint, you can actually get sued if your product isn't accessible. So there's been like a couple of high profile ones. So maybe if you don't think of it from the standpoint of wanting to include everyone, maybe you can think of it from the point of you don't want to get sued.
+
+Rahat Chowdhury  10:55  
+Yeah, I think sometimes just that having that little business reason for getting the buy in? You mentioned it like you were self taught. Are there any like online courses, blogs or things like that you kind of like look into or like to use for learning more about accessibility or just in general?
+
+Erika Myles  11:13  
+Yeah, so starting out, it didn't seem like it was something that was widely talked about, like even in a lot of like beginner HTML and CSS tutorials like simple things like for images, you should always have like an alt tag for your image describing what it is. Because if someone is like using your application through an assistive device, like a screen reader, it tells them what it's a picture of. So that way, if it's something that relates to the content on the page, they're not missing out on like, crucial bits of information. And a lot of tutorials will be like, oh, we'll just leave this blank for now. Or we'll just put like some arbitrary phrase in there. That doesn't mean anything. So I kind of had to dig for resources that went in depth. I know Marcy Sutton has a course. That definitely dives into accessibility. And I know there are some on egghead.io, and I know like the dq website, they have lots of like intro things, and the W three org, they have like an intro thing that just basically walks you through what accessibility is who it's impacted by and just like beginner steps as far as like implementing it.
+
+Rahat Chowdhury  12:30  
+Nice. So from my understanding, and I don't know, I guess too much about it, which I'm hoping to change. A lot of it is just like really doing semantic HTML markup. Is that correct?
+
+Erika Myles  12:44  
+Yeah, it can be from a developer point of view. I'm lucky in the sense that since I work for like a large corporation, we have a design team. So they take into account things like color contrast and font size and things like that. And it's kind of built into our design system, so I don't have to worry about it. But if you're someone who's like freelancing or doing products for yourself, you would have to look into things like color contrast and stuff like that. But for the most part as a developer, if you focus on semantic HTML, and the ARIA labels for like your JavaScript that covers like, a huge portion of it, to start.
+
+Rahat Chowdhury  12:45  
+Okay, so in terms of like the JavaScript side of things, it's really the ARIA labels that you focus on.
+
+Erika Myles  13:28  
+Yep. So everything doesn't always require an aria label, like you want to look into it and make sure that you're using the right ones. But mainly that's kind of what that's for. But the semantic HTML takes up a lot, like a lot of people will go and make like a button out of a div. But if you do that, a screen reader won't know that it's a button and it won't give the person like the right auditory cues for what to do next. So if you just implement things like button tags, if you use nav tags to group like, related links together or unordered, lists ordered lists, it really changes the way that the screen reader announces it and makes a whole lot more sense for the user. And also, if you're using semantic HTML, like the correct headers and things like that, it helps the user navigates through the page a lot quicker.
+
+Rahat Chowdhury  14:23  
+Nice. Yeah. I, I've heard like some horror stories of people who've done like prs. It's like open source stuff for other things. And there's one story or like, someone actually like refactored a bunch of divs to be buttons. And not only did it like, make it more accessible, it also like removed a bunch of lines of code that were unnecessary. And the PR was rejected and the person really didn't give a reason as to why it was rejected. They just said no. And I'm when I saw that it was like, but A. your code is now better. B. like you're actually, you know, including people that weren't, I guess included before. So it's, it's sometimes baffles me that people like, don't want to almost like, bring that into their like daily code or whatever.
+
+Erika Myles  15:21  
+That's so weird cuz yeah if I look at a bunch of divs I got to like sort through and figure out what it is. But if it's button, I can see that it's a button or it's a section its easy.
+
+Hasibul Chowdhury  15:33  
+ Definitely, I think the best way to like combat that is just to force these devs to use a screen reader themselves for a week, and then and then everything will change magically.
+
+Erika Myles  15:44  
+Yeah, once I started using a screen reader, I was like, Oh my goodness. I was like, is this what it sounds like? I was like, Okay. But when you hear the difference between like, something that's marked up really well versus something else, it's, it's a lot easier and just kind of like a cultural To change, like, I don't know, it kind of gets like a reputation that people are kind of nitpicking when they ask you to make things accessible. But I think if people can actually immerse themselves in the experience, they can actually see how useful it can be. And of course, you want people to think your product is easy to use, because that's, that's better for you. That's job security as a developer, so hopefully, there'll be a change in like people's minds.
+
+Rahat Chowdhury  16:24  
+Definitely, yeah, I think there's like a lot of just like going back on like the semantic HTML thing. There's like a lot of things you kind of get for free. When you're using semantic HTML. I remember, the other day I was like building a form and like labeling the inputs correctly. I would get like for the email validation, a little pop over come up, like hey, you need to put an actual email in here. I'm just like, this is great. I didn't know this could do that.
+
+Me either. Until like recently, I was like, Oh, this is nice.
+
+I guess  like with the buttons and everything I would before I would try to like, override some of the styles and like, get rid of the outline because I'm just like, Oh, no, this looks kind of ugly. I don't like the blue outline. And it never occurred to me that that outlines important.
+
+Oh, yeah, the focus outline
+
+yea the focus outline.
+
+Erika Myles  17:17  
+Yeah, yeah, definitely important for like when someone's tabbing through because like one of the, the, what I want to say one of the like pillars of accessibility, like, so there's four of them. There's perceivable, operable, understandable and robust. And I think operable is the one where basically, at work, they showed me like, the user has to be able to completely navigate up down through everything in the page, like using the keyboard, and I never really considered that someone would do that. But after doing that, I'm like, Oh, well, that makes like a whole lot of sense. And now even myself, I'll find myself just kind of tabbing through things just to like see, or like, on my own on other sites, so don't take the focus off!
+
+Hasibul Chowdhury  17:59  
+ You know, I feel like A lot of gamers do that, like they refuse to use the mouse and then stick the keyboard and I feel like a lot of people I talked to that are I guess more PC gamers are we're doing our boot camp, they're like testing that on their own website. I guess. At that time, I didn't even know there was a form of accessibility, it was just see if you can arrow and tap through everything properly. And it you know, that's a great point that you make like that. The fact that that is part of accessibility. I feel like if you if more people understood that it will make it a lot easier for people to implement accessible workflows into their businisses.
+
+Erika Myles  18:40  
+Yeah, I have a co worker who like hardly ever uses a mouse and I'm like how, but yeah, a lot of people if they have like tactile disorders, like if you have like a tremor with your hand, like using your mouse to like click on something on the screen can be a little daunting. So if they can tab through, it's a lot easier for them.
+
+Rahat Chowdhury  18:58  
+Definitely Yeah, I've also seen people just like yeah, Hasibul mentioned gamers and just people just refuse to use the mouse for most things. Because the keyboard is like faster. Like, I guess those are like so also people with like usually vim with their magic fingers. Can't do that. 
+
+Erika Myles  19:17  
+No, no, I can barely use like all the shortcuts in VS code. My coworkers like, why don't you use this shortcut? And I'm like, Look, I just started using shortcuts for like, cut, copy and paste. Leave me alone. Okay, I'm trying.
+
+Rahat Chowdhury  19:30  
+Hasibul loves shortcuts. But like, I also have like, adopted them very slowly.
+
+Hasibul Chowdhury  19:37  
+The way to add on shortcuts like I've seen this trick, and I've done it is just get a post it. Pick one shortcut, put on it and keep using it until you stop looking at that post it to like, remember that shortcut, and then go to the next one. So it might take you a day or may take you a month to remember it. So you know, but I've done that. I just like doing that because I don't want to keep Using my mouse and keyboard with the same thing over and over, I'm gonna do an action over and over. And again, I'll just learn that shortcut.
+
+Rahat Chowdhury  20:06  
+So in terms of, I guess, like, testing out your accessibility, you mentioned a couple things like the lighthouse, those scores and things like that. What do you use kind of like, I guess, in production to make sure that your accessibility ratings are up to par?
+
+Erika Myles  20:22  
+Yeah. So before we put anything out into production, we I, at least I do on our team, we all run it through, I believe it's called the world view test. It's like an auditing tool. It's a Chrome plugin. So we do that. Next after that, there's a few more plugins. And a lot of them are available on like the sites I mentioned earlier, but you can add them to your browser. And it will basically some of them will highlight all of the HTML on the page. So you can make sure like the semantics make sense. You can check the order of the headers and the flow of your page. The test one, it also audits like your contrast and things like that. And then once our pages are out into production, that's when our accessibility team, they will go back behind us. And they'll actually audit all of our work. So if we've missed anything, then they'll send it to us. And we'll have to get those fixed, like as soon as possible. And they have to, at that point, confirm that we've actually fixed it and put it within the guidelines. And then we have to push those changes out to production. Usually they do it about every month or so. Just to kind of make sure that we haven't missed any thing.
+
+Hasibul Chowdhury  21:37  
+You know, have you or in the history of the company who worked at has any production been delayed because it failed accessibility testing, or how does your company like have a contingency plan set up for any delayed releases?
+
+Erika Myles  21:54  
+So in our like, testing workflow, before we put things well, we'll put it into a test environment but if that's ability is actually the very first thing that we test. So if the tester finds any defects in the product during that phase, you have to fix them and have them revalidated before it can go on into other test environments and be reviewed. So it's kind of one of those things where if you're falling behind, that's just unfortunate, but you can't go forward without it passing, like accessibility testing. If it's something where we have any questions, or it's kind of like, questionable, if we can put something out in production, then we would have to consult with our accessibility team and ask them like, Hey, we can't get it beyond this. Is this okay to go into production? Or like, what do you suggest, but since it's on the front end, it usually doesn't get kind of pushed to the side, at least for our team.
+
+Rahat Chowdhury  22:49  
+I remember earlier you'd mentioned like if you're like a freelancer or someone working on your own, you'd want to you know, check for contrast and different things like that. Are there any rules or things that you Kind of like, look into for that. I don't like it for me, I guess the only thing I can really think of is like don't put blue text on the blue backround or something like that. But it's hard to, I guess, figure out.
+
+Erika Myles  23:11  
+Yeah, so let me see if I have one listed. I'm trying to think I have like a ton of bookmarks. I just need to like, put them out in the world. But one of them, okay, so there's color safe.co. And that's a generator that will kind of put together accessible colors for you. And also like the webaim.org in the resources they have, like color checkers and basically what it is, you'll put like your background in and your font color in and like the font size, and basically it'll spit out like a number. And based on that number, it'll tell you if it's in an acceptable range, or if it's unacceptable, and usually what it is, either there's not enough color contrast for the size of the font. So you can use some pairings together if the fonts are larger, but allowed It is focused on people with like color blindness. So making sure you're not putting two colors together that would make it so they can't clearly distinguish things. or making sure like the contrast isn't too high or too low. So it's actually pretty cool. I actually found out that a lot of a lot of fonts like font and color pairings that I like, since I like to use like thin fonts, like when I'm doing like my own projects, they aren't accessible. And I think there's actually simulators that show you how a person with like color blindness or something like that would see your page.
+
+Rahat Chowdhury  24:35  
+Okay, yeah, that would be definitely useful to have. Like you all this kind of reminds me of like this new I don't know if it's realy a new thing that's been happening. I'm probably gonna butcher saying it, but like numorphism or something. And when I first looked at it, it looked kind of cool. But like, kind of thinking. About, like accessibility and all that. And it's all just like a bunch of shadows and stuff to make it look like, I guess, different designs. So someone who's colorblind or has a vision impairment probably wouldn't be as thrilled with those really cool designs as we are.
+
+Erika Myles  25:20  
+Yeah, I saw some of that earlier. And I was like, Oh, that's really cool. And I was like, well, it's all like pretty much the same color. So I mean, I'm sure there's ways you could incorporate accessibility into it to kind of like, make your vision work, but a lot of it seems a little a little dicey.
+
+Hasibul Chowdhury  25:36  
+I just looked it up right now. And it bothered me so much. I don't I don't have color blindness or anything like that. But I don't know if it's something just triggering me and my mom has lycocoma. And I have like a small chance of development when I'm older. And I'm just thinking like, if she was looking at this, she would hate it too. And I'm just like, I think it might be I don't know why this trend exists. Please don't do it.
+
+Erika Myles  26:02  
+Yeah, there's a lot of like trends that aren't exactly accessible. Like the gifs a lot like repeating over and over, there's actually a way where you can set like limits on your site. So like someone has like epilepsy or something like that you're not triggering something with them. Or if people get like vertigo if people have like the moving backgrounds and all of that, there's actually settings that you can put into your code. So if they have like a certain setting enabled in their browser, it won't give them like motion sickness or something. I was like, Oh, that's really cool and useful.
+
+Rahat Chowdhury  26:33  
+Definitely. Yeah, there's so many things that we I guess we kind of just do, because they're cool. And we don't think about it. Like how it's affecting people or anything like that. So yeah, definitely. Looking into accessibility is something that we probably all should do. And it really should be part of, I guess, the education process of like boot camps and Traditional degrees or whatever, I feel like I feel like almost like people who are self taught like yourself, like have an advantage there because you're like kind of always looking for things to learn. So you kind of like stumble upon all the stuff. Like you mentioned, like your you saw this on Twitter and like, go on from there. So. So that's like an awesome way to like find these things. But I guess before like, I guess some of us were Bootcamp, grads or some people who were CS routes, before they actually start exploring and looking at what's out there. It'd be awesome to have that as part of like the education system in general.
+
+Erika Myles  27:41  
+Yeah, definitely. Because you know, the more you're exposed to something, it's a lot easier to make it like a habit. And if you're doing something like a boot camp or school, if you're in kind of like a guided curriculum, you probably have like, a limited amount of time to learn a ton of things. So it's hard to go out on your own I'm sure and like, find additional To like supplements, so hopefully going forward, that'll be something that can be kind of woven into people's curriculums and stuff.
+
+Hasibul Chowdhury  28:08  
+I agree. I mean, I don't think it's too hard, though. I mean, I've taken CS classes in college and the boot camp. And that and both my instructors, you know, professors plus boot camp instructor, they were like, Oh, yeah, this is accessibility stuff. You can look it up later. And they gloss over. Like the alt tag, like when I like almost every single class slash boot camp, boot camp lesson with images, anything with the alt tag was always looked over. Like, I'll just put it in there or you don't even need it. I felt like that was the attitude for a lot of instructors. So until that attitude changes, or I guess, new people start teaching and bring in the attitude that, hey, we need to be accessible. It's going to take a while for that to change within the education system.
+
+Erika Myles  28:57  
+Yeah, it'll take some time, but I think it's doable
+
+Rahat Chowdhury  29:01  
+Good things take time. Cool. We usually like to wrap up our episodes with like a catch up session. So what are you up to outside of work? Hopefully staying sane from all this staying inside.
+
+Erika Myles  29:18  
+Man, not that much as of recently, unfortunately. Like for a while, um, my daughter, she's actually in like Cub Scouts. And actually, this past weekend, we were supposed to go camping, and I was really excited for it. Because last time I went camping, I'm like, not a nature person at all. And I went and I was like, Okay, this is cool. So like, this year, I was like, I'm gonna get us like this fancy tent, and all this other stuff. And of course, it got canceled. So I'm like all of my hobbies, other than that are like just ordering food for takeout or shopping online. So I'm like, trying to find new things to do. Keep myself occupied.
+
+Rahat Chowdhury  30:00  
+One of the hardest things is just like seeing everything that's cancelled and trying to figure out okay, what do I do now instead of this?
+
+Hasibul Chowdhury  30:09  
+Just thinking about out when I was a Cub Scout My parents never let me go camping. So like nothing changed for me.
+
+Rahat Chowdhury  30:13  
+Thank you for listening to this episode of tech4humans. If you enjoyed this episode, please share it with your friends. You can tweet us @tech4humansio, or listen to all of our episodes at tech4humans.io. Episodes are available on all major podcast platforms.
+
+Transcribed by https://otter.ai
